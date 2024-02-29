@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #2F2E41;
+    --text-white-color: #FFFFFF;
+    --text-green-color: #00BFA6;
+    --text-grey-color: #C2C2C2;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: "JetBrains Mono", monospace;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 45px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-white-color);
+    line-height: 28px;
+    font-size: 15.6px;
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 100px;
+}
+
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--text-grey-color);
+    text-align: center;
+    width: 691px;
+}
+
+.text-content h1 {
+    color: var(--text-white-color);
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.text-content h1 span {
+    color: var(--text-green-color);
+}
+
+.text-content p {
+    line-height: 28px;
+}
+
+span.green, span.grey {
+    font-weight: bold;
+}
+
+span.grey {
+    color: var(--text-grey-color);
+}
+
+span.green {
+    color: var(--text-green-color);
+}
+
+
+.line {
+    width: 568px;
+    border-top: 1px solid var(--text-green-color);
+    margin: auto
+}
+
+footer {
+    color: var(--text-white-color);
+    text-align: center;
+    margin-top: 27px;
+}
+
+.padlock {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+}
